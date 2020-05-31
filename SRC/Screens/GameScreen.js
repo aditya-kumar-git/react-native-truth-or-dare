@@ -150,10 +150,11 @@ export class GameScreen extends Component {
           >
             <TouchableOpacity activeOpacity={0.9} onPress={rotateTheBottle}>
               <Animated.Image
-                source={{ uri: this.props.bottleList[selectedBottle] }}
+                source={this.props.bottleList[this.props.selectedBottle]}
                 style={{
                   transform: [{ rotate: rotateBottle }],
                   height: Dimensions.get("screen").width,
+                  alignSelf: "center",
                 }}
                 resizeMode="contain"
               />

@@ -45,9 +45,10 @@ export class BottleBox extends Component {
           }}
         >
           <Image
-            source={{ uri: allData }}
+            source={allData}
             style={{
               flex: 1,
+              alignSelf: "center",
             }}
             resizeMode="contain"
           />
